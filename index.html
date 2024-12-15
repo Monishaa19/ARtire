@@ -6,20 +6,22 @@
   <title>ARtire - Explore Fashion in AR</title>
   <style>
     /* Basic CSS styles */
+    
     body {
+        background: linear-gradient(to right, #4b052e, #bd53b7, #4b052e);
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
     }
     header {
-      background-color: #4B0082;
+      margin-top: 1rem;
       color: #fff;
       padding: 20px;
     }
     nav ul {
       list-style-type: none;
       display: flex;
-      justify-content: space-between;
+      justify-content: space-evenly;
       margin: 0;
       padding: 0;
     }
@@ -51,9 +53,9 @@
       font-size: 16px;
       cursor: pointer;
     }
-    .features {
+    <!-- .features {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2,1fr);
       grid-gap: 40px;
     }
     .feature {
@@ -65,6 +67,11 @@
     }
     .feature p {
       font-size: 16px;
+    } -->
+
+    img{
+        height: 500px;
+        width: 500px;
     }
   </style>
 </head>
@@ -88,23 +95,26 @@
     </section>
 
     <section class="features">
-      <div class="feature">
-        <h2>Virtual Dressing Room</h2>
-        <p>Experience the perfect fit with our AR clothes try-on feature.</p>
-      </div>
-      <div class="feature">
-        <h2>Instant Visualization</h2>
-        <p>See how clothes look on you before you buy them.</p>
-      </div>
-      <div class="feature">
-        <h2>Hassle-free Shopping</h2>
-        <p>Avoid in-person shopping and reduce the risk of returns.</p>
-      </div>
-      <div class="feature">
-        <h2>Cutting-edge Technology</h2>
-        <p>Explore the latest advancements in AR fashion technology.</p>
-      </div>
-    </section>
+        <div class="feature" style="grid-column: 1; grid-row: 1;">
+          <h2>Virtual Dressing Room</h2>
+          <p>Experience the perfect fit with our AR clothes try-on feature.</p>
+        </div>
+        <div class="feature" style="grid-column: 1; grid-row: 2;">
+          <h2>Instant Visualization</h2>
+          <p>See how clothes look on you before you buy them.</p>
+        </div>
+        <div class="feature" style="grid-column: 2; grid-row: 1 / span 2; display: flex; justify-content: center; align-items: center;">
+          <img src="image.avif" alt="">
+        </div>
+        <div class="feature" style="grid-column: 3; grid-row: 1;">
+          <h2>Hassle-free Shopping</h2>
+          <p>Avoid in-person shopping and reduce the risk of returns.</p>
+        </div>
+        <div class="feature" style="grid-column: 3; grid-row: 2;">
+          <h2>Cutting-edge Technology</h2>
+          <p>Explore the latest advancements in AR fashion technology.</p>
+        </div>
+      </section>
   </main>
 </body>
 </html>
