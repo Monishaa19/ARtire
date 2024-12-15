@@ -7,8 +7,8 @@
   }
   
   body {
-    background-color: #1a1325;
-    color: #fff;
+    background-color: #bde0fe;
+    
     overflow-x: hidden;
   }
   
@@ -23,7 +23,7 @@
   .logo {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #ffffff;
+    color: #023047;
   }
   
   nav ul {
@@ -37,29 +37,30 @@
   
   nav ul li a {
     text-decoration: none;
-    color: #ffffff;
-    font-size: 1rem;
+    color: #023047;
+    font-size: 1.2rem;
     transition: 0.3s;
   }
   
   nav ul li a:hover {
-    color: #d48bff;
+    color: #023047;
   }
   
   .contact-btn {
     background: none;
-    border: 1px solid #fff;
-    color: #fff;
+    border: 1px solid #023047;
+    color: #023047;
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 20px;
     transition: 0.3s;
+    font-size:1.2rem;
   }
   
   .contact-btn:hover {
-    background: #d48bff;
-    color: #fff;
-    border-color: #d48bff;
+    background: #023047;
+    color: #023047;
+    border-color: #023047;
   }
   
   /* Hero Section */
@@ -71,36 +72,40 @@
   }
   
   .content h1 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     line-height: 1.2;
     margin-bottom: 20px;
-    color: #e7e5f8;
+    color: #023047;
   }
   
   .content p {
     font-size: 1.2rem;
     margin-bottom: 30px;
-    color: #a89fc9;
+    color: #023047;
+    text-align: justify;
+    max-width: 40ch;
   }
   
   .cta-btn {
-    background: #d48bff;
+    background: #8ecae6;
     border: none;
     padding: 12px 24px;
     border-radius: 25px;
-    color: #fff;
+    color: #023047;
     font-size: 1rem;
     cursor: pointer;
     transition: 0.3s;
+    font-size:1.2rem;
   }
   
   .cta-btn:hover {
-    background: #c66aff;
+    background: #023047;
   }
   
   .hero-image img {
     max-width: 100%;
     height: auto;
+   
   }
   
   /* Floating Box */
@@ -125,37 +130,4 @@
     font-size: 1rem;
   }
   
-  /* User Stats Box */
-  .user-stats {
-    position: absolute;
-    bottom: 10%;
-    right: 10%;
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 10px;
-    padding: 20px;
-    width: 220px;
-  }
-  
-  .user-stats h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-  }
-  
-  .user-stats p {
-    font-size: 0.9rem;
-    color: #a89fc9;
-  }
-  
-  .user-icons {
-    display: flex;
-    margin-top: 10px;
-  }
-  
-  .user-icons img {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    margin-right: 5px;
-  }
   
