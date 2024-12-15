@@ -1,0 +1,161 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #1a1325;
+    color: #fff;
+    overflow-x: hidden;
+  }
+  
+  /* Header Styles */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1rem;
+    transition: 0.3s;
+  }
+  
+  nav ul li a:hover {
+    color: #d48bff;
+  }
+  
+  .contact-btn {
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.3s;
+  }
+  
+  .contact-btn:hover {
+    background: #d48bff;
+    color: #fff;
+    border-color: #d48bff;
+  }
+  
+  /* Hero Section */
+  .hero {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 60px 80px;
+    position: relative;
+  }
+  
+  .content h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: #e7e5f8;
+  }
+  
+  .content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #a89fc9;
+  }
+  
+  .cta-btn {
+    background: #d48bff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .cta-btn:hover {
+    background: #c66aff;
+  }
+  
+  .hero-image img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Floating Box */
+  .floating-box {
+    position: absolute;
+    right: 20%;
+    top: 25%;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+  }
+  
+  .floating-box img {
+    width: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .floating-box p {
+    font-size: 1rem;
+  }
+  
+  /* User Stats Box */
+  .user-stats {
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    width: 220px;
+  }
+  
+  .user-stats h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .user-stats p {
+    font-size: 0.9rem;
+    color: #a89fc9;
+  }
+  
+  .user-icons {
+    display: flex;
+    margin-top: 10px;
+  }
+  
+  .user-icons img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 5px;
+  }
+  

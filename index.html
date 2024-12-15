@@ -3,118 +3,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ARtire - Explore Fashion in AR</title>
-  <style>
-    /* Basic CSS styles */
-    
-    body {
-        background: linear-gradient(to right, #4b052e, #bd53b7, #4b052e);
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      margin-top: 1rem;
-      color: #fff;
-      padding: 20px;
-    }
-    nav ul {
-      list-style-type: none;
-      display: flex;
-      justify-content: space-evenly;
-      margin: 0;
-      padding: 0;
-    }
-    nav ul li a {
-      color: #fff;
-      text-decoration: none;
-      padding: 10px 20px;
-    }
-    main {
-      padding: 40px;
-    }
-    .hero {
-      text-align: center;
-      margin-bottom: 40px;
-    }
-    .hero h1 {
-      font-size: 36px;
-      margin-bottom: 20px;
-    }
-    .hero p {
-      font-size: 18px;
-      margin-bottom: 30px;
-    }
-    .hero button {
-      background-color: #4B0082;
-      color: #fff;
-      border: none;
-      padding: 10px 20px;
-      font-size: 16px;
-      cursor: pointer;
-    }
-    <!-- .features {
-      display: grid;
-      grid-template-columns: repeat(2,1fr);
-      grid-gap: 40px;
-    }
-    .feature {
-      text-align: center;
-    }
-    .feature h2 {
-      font-size: 24px;
-      margin-bottom: 10px;
-    }
-    .feature p {
-      font-size: 16px;
-    } -->
-
-    img{
-        height: 500px;
-        width: 500px;
-    }
-  </style>
+  <title>VR Landing Page</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
+  <!-- Header Section -->
+  <header class="header">
+    <div class="logo">Vision</div>
     <nav>
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#">Blog</a></li>
       </ul>
     </nav>
+    <button class="contact-btn">Contact</button>
   </header>
 
-  <main>
-    <section class="hero">
-      <h1>Explore Fashion in AR with ARtire</h1>
-      <p>Transform your shopping experience with our cutting-edge AR technology.</p>
-      <button>Try on Now</button>
-    </section>
-
-    <section class="features">
-        <div class="feature" style="grid-column: 1; grid-row: 1;">
-          <h2>Virtual Dressing Room</h2>
-          <p>Experience the perfect fit with our AR clothes try-on feature.</p>
-        </div>
-        <div class="feature" style="grid-column: 1; grid-row: 2;">
-          <h2>Instant Visualization</h2>
-          <p>See how clothes look on you before you buy them.</p>
-        </div>
-        <div class="feature" style="grid-column: 2; grid-row: 1 / span 2; display: flex; justify-content: center; align-items: center;">
-          <img src="image.avif" alt="">
-        </div>
-        <div class="feature" style="grid-column: 3; grid-row: 1;">
-          <h2>Hassle-free Shopping</h2>
-          <p>Avoid in-person shopping and reduce the risk of returns.</p>
-        </div>
-        <div class="feature" style="grid-column: 3; grid-row: 2;">
-          <h2>Cutting-edge Technology</h2>
-          <p>Explore the latest advancements in AR fashion technology.</p>
-        </div>
-      </section>
-  </main>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="content">
+      <h1>Explore <br> Beyond the Ordinary</h1>
+      <p>Transform Your World with Cutting-Edge VR Experiences</p>
+      <button class="cta-btn">Get Started</button>
+    </div>
+    <div class="hero-image">
+      <img src="original-9847bc0602376aa067d768755d70d970.webp" alt="VR Girl">
+    </div>
+    <div class="floating-box">
+      <img src="VR-glasses.png" alt="VR Glasses">
+      <p>Unlock a New Dimension</p>
+    </div>
+    <div class="user-stats">
+      <h3>15k users</h3>
+      <p>We proudly serve a thriving community of thousands of users who trust us</p>
+      <div class="user-icons">
+        <img src="user1.jpg" alt="User 1">
+        <img src="user2.jpg" alt="User 2">
+        <img src="user3.jpg" alt="User 3">
+      </div>
+    </div>
+  </section>
 </body>
 </html>
