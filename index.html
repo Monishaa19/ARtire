@@ -30,7 +30,7 @@
     <div class="content">
       <h1>Explore Fashion in AR with ARtire</h1>
       <p>Transform your shopping experience with our cutting-edge AR technology. With ARtire, you can effortlessly try on outfits virtually, saving time and eliminating guesswork. Our immersive augmented reality experience ensures a personalized and interactive journey, bringing the fitting room to your fingertips. Discover the perfect fit, style, and color—all from the comfort of your home. Step into the future of fashion with ARtire and redefine the way you shop!</p>
-      <button class="cta-btn" onclick="scrollToSection()">Get Started</button>
+      <button class="cta-btn" onclick="scrollToSection()">&Aacute; la carte</button>
       <a href="https://lens.snap.com/experience/aaf7d7e7-6c21-40fe-adc5-2241552eeb87"><button class="cta-btn">Wardrobe</button></a>
     </div>
     <div class="hero-image">
@@ -42,7 +42,7 @@
   <section id="section-two" class="section-two">
     <div class="search-container">
       <i class="fa-solid fa-magnifying-glass"></i>
-      <input type="text" placeholder="Search ...">
+      <input type="text" id="search" class="search-bar" placeholder="Search for a product..." onkeyup="searchProducts()">
     </div>
 
   
@@ -177,6 +177,19 @@
       document.getElementById('section-two').scrollIntoView({ behavior: 'smooth' });
     }
 
+    function searchProducts() {
+      const searchInput = document.getElementById('search').value.toLowerCase();
+      const cards = document.querySelectorAll('.card');
+
+      cards.forEach(card => {
+        const cardTitle = card.querySelector('h3').textContent.toLowerCase();
+        if (cardTitle.includes(searchInput)) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
     
   </script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>

@@ -116,6 +116,16 @@
     height: auto;
    
   }
+  .hero {
+    height: 500px;
+    width:2000px; /* Adjust this height as needed */
+  }
+  
+  .hero img {
+    height: 100%; /* Make the image fill the entire container vertically */
+    object-fit: cover;
+  }
+  
   
   /* Floating Box */
   .floating-box {
