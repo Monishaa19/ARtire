@@ -143,33 +143,33 @@
   <section id="feedback-section" class="feedback-section">
     <h2 class="feedback-title">We Value Your Feedback</h2>
     <p class="feedback-description">Let us know your thoughts about your virtual try-on experience. Your feedback helps us improve!</p>
-    <form class="feedback-form">
-      <div class="form-group">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" placeholder="Enter your name" required>
-      </div>
-      <div class="form-group">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="Enter your email" required>
-      </div>
-      <div class="form-group">
-        <label for="rating">Rate Your Experience:</label>
-        <select id="rating" name="rating" required>
-          <option value="" disabled selected>Select rating</option>
-          <option value="1">1 - Very Poor</option>
-          <option value="2">2 - Poor</option>
-          <option value="3">3 - Average</option>
-          <option value="4">4 - Good</option>
-          <option value="5">5 - Excellent</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label for="feedback">Your Feedback:</label>
-        <textarea id="feedback" name="feedback" rows="4" placeholder="Share your experience..." required></textarea>
-      </div>
-      <button type="submit" class="submit-btn">Submit Feedback</button>
+    <form id="feedback-form" class="feedback-form">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+            <label for="rating">Rate Your Experience:</label>
+            <select id="rating" name="rating" required>
+                <option value="" disabled selected>Select rating</option>
+                <option value="1">1 - Very Poor</option>
+                <option value="2">2 - Poor</option>
+                <option value="3">3 - Average</option>
+                <option value="4">4 - Good</option>
+                <option value="5">5 - Excellent</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="feedback">Your Feedback:</label>
+            <textarea id="feedback" name="feedback" rows="4" placeholder="Share your experience..." required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Submit Feedback</button>
     </form>
-  </section>
+</section>
   
 
   <script>
@@ -190,6 +190,36 @@
         }
       });
     }
+
+
+    document.getElementById('feedback-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const rating = document.getElementById('rating').value;
+      const feedback = document.getElementById('feedback').value;
+
+      const feedbackData = {
+          name: name,
+          email: email,
+          rating: rating,
+          feedback: feedback
+      };
+
+      const jsonString = JSON.stringify(feedbackData, null, 2);
+
+      const blob = new Blob([jsonString], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'feedback.json';
+      a.click();
+
+      URL.revokeObjectURL(url);
+      alert('Your feedback has been saved as a JSON file!');
+  });
     
   </script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
